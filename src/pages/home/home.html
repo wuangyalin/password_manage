@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Password Manage
+    </ion-title>
+    <ion-buttons begin>
+      <button ion-button icon-only (click)="addRecord()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="signOut()">
+        logout
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let record of records | async" (click)="showOptions(record.$key, record.name,record.username,record.password)">
+      <ion-avatar item-left>
+        <i class="icon iconfont icon-yinxingqiaguanli"></i>
+      </ion-avatar>
+      <h2><strong>{{record.name}}</strong></h2>
+      <h3><strong>Username:   </strong>{{record.username}}</h3>
+      <h3><strong>Password:   </strong>{{record.password}}</h3>
+    </ion-item>
+  </ion-list>
+</ion-content>

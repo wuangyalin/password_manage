@@ -1,0 +1,27 @@
+<ion-content>
+  <div [@logoState]="logoIn" class="logo">
+    <span>Logo Here</span>
+  </div> 
+
+  <div [@buttonState]="buttonIn" class="social_buttons">
+    <ion-row>
+      <button (click)="signInWithGoogle()" class="google_button">
+        <ion-icon name="logo-googleplus"></ion-icon>
+        Login With Google+
+      </button>
+    </ion-row>
+    <ion-row>
+      <button (click)="signInWithFacebook()" class="facebook_button">
+        <ion-icon name="logo-facebook"></ion-icon>
+        Login With FaceBook
+      </button>
+    </ion-row>
+    <ion-row>
+      <span class="text">Do not have account?</span>
+    </ion-row>
+    <ion-row>
+<!--       <button ion-button (click)="login()" class="login_button" color="dark" clear>Log In</button>
+ -->      <button ion-button class="signin_button" color="dark" (click)="createAccount()" clear>Sign In</button>
+    </ion-row>
+  </div>
+</ion-content>
