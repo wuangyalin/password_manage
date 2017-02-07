@@ -50,12 +50,23 @@
     "cordova-plugin-facebook4": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-facebook4"
+            "id": "cordova-plugin-facebook4@~1.7.4"
         },
         "is_top_level": true,
         "variables": {
             "APP_ID": "790628074407332",
             "APP_NAME": "IOSAPP"
+        }
+    },
+    "cordova-plugin-googleplus": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/EddyVerbruggen/cordova-plugin-googleplus",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {
+            "REVERSED_CLIENT_ID": "241491334119-13v0dhgmisnuglcktkajhoams3tbdaof.apps.googleusercontent.com"
         }
     }
 }

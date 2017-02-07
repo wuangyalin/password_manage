@@ -3,7 +3,7 @@ import { AngularFire, AuthProviders, FirebaseAuth, FirebaseAuthState, AuthMethod
 import { DataService } from './data-service';
 import { Platform } from 'ionic-angular';
 import { Facebook, FacebookLoginResponse } from 'ionic-native';
-
+import { GooglePlus } from 'ionic-native';
 
 /*
   Generated class for the AuthService provider.
@@ -41,10 +41,20 @@ export class AuthService {
   }
 
   signInWithGoogle(): firebase.Promise<FirebaseAuthState> {
-    return this.auth$.login({
-      provider: AuthProviders.Google,
-      method: AuthMethods.Popup
-    });
+    if(this.platform.is('cordova')){
+      console.log("enter cordova");
+      GooglePlus.login({
+          'webClientId': '241491334119-13v0dhgmisnuglcktkajhoams3tbdaof.apps.googleusercontent.com'
+        }).then(res => {
+        const googlePlusCredential = firebase.auth.GoogleAuthProvider.credential(res.authResponse.accessToken);
+        return firebase.auth().signInWithCredential(googlePlusCredential);
+      });        
+    }else{
+      return this.auth$.login({
+        provider: AuthProviders.Google,
+        method: AuthMethods.Popup
+      });
+    }
   }
   signOut(): void {
     this.auth$.logout();
