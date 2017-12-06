@@ -1,6 +1,6 @@
 {
   "name": "password",
   "app_id": "",
-  "v2": true,
-  "typescript": true
+  "integrations": {},
+  "type": "ionic-angular"
 }
