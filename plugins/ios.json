@@ -8,31 +8,34 @@
     },
     "installed_plugins": {
         "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.ionicframework.password730660"
+            "PACKAGE_NAME": "io.ionic.starter"
         },
         "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.ionicframework.password730660"
-        },
-        "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "com.ionicframework.password730660"
-        },
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "com.ionicframework.password730660"
-        },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.ionicframework.password730660"
-        },
-        "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "com.ionicframework.password730660"
+            "PACKAGE_NAME": "io.ionic.starter"
         },
         "cordova-plugin-facebook4": {
             "APP_ID": "790628074407332",
             "APP_NAME": "IOSAPP",
-            "PACKAGE_NAME": "com.ionicframework.password730660"
+            "PACKAGE_NAME": "io.ionic.starter"
         },
         "cordova-plugin-googleplus": {
             "REVERSED_CLIENT_ID": "241491334119-13v0dhgmisnuglcktkajhoams3tbdaof.apps.googleusercontent.com",
-            "PACKAGE_NAME": "com.ionicframework.password730660"
+            "PACKAGE_NAME": "io.ionic.starter"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "io.ionic.starter"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "io.ionic.starter"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "io.ionic.starter"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "io.ionic.starter"
+        },
+        "cordova-plugin-ionic-webview": {
+            "PACKAGE_NAME": "io.ionic.starter"
         }
     },
     "dependent_plugins": {}
